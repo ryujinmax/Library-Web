@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('list_books', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('categoryBook');
+            $table->string('categoryBook');
 
             $table->string('name');
             $table->string('slug');

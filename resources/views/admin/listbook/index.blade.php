@@ -30,7 +30,7 @@
                                 <td>{{ $row->categoryBook }}</td>
                                 <td>{!! Str::limit($row->description) !!}</td>
                                 <td>
-                                    <a href="" class="btn btn-info btn-sm mb-2">Detail</a>
+                                    <a href="{{ route('listbook.show', $row->id) }}" class="btn btn-info btn-sm mb-2">Detail</a>
 
                                     <a href="{{ route('listbook.edit', $row->id) }}" class="btn btn-warning btn-sm mb-2">Edit</a>
 
